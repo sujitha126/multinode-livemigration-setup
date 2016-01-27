@@ -32,6 +32,10 @@
       shell=/bin/bash
       groups="sudo"
 
+- name: Add sudo permission for {{ USERS.stack_user }} user ...
+  shell: >
+     echo "{{ USERS.stack_user }} ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers 
+
 #
 # Installation of necessary software packages
 #

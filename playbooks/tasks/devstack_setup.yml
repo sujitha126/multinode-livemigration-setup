@@ -44,6 +44,7 @@
 #
 # Run the stack.sh command to install DevStack
 #
+
 - name: Run stack.sh. Log and error output in {{ FILES.log_dir }}
   shell: >
       ./stack.sh >> {{ FILES.log_dir }}/stack.sh.log 2>&1

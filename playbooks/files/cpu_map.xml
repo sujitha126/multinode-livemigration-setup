@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cpus>
+  
+  
+  <arch name="x86">
+    
+    
+    
+    <vendor name="Intel" string="GenuineIntel"/>
+    
+    
+    <vendor name="AMD" string="AuthenticAMD"/>
+    
+
+    
+    
+    <feature name="fpu">
+       
+      
+      <cpuid edx="0x00000001" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="vme">
+       
+      
+      <cpuid edx="0x00000002" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="de">
+       
+      
+      <cpuid edx="0x00000004" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pse">
+       
+      
+      <cpuid edx="0x00000008" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="tsc">
+       
+      
+      <cpuid edx="0x00000010" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="msr">
+       
+      
+      <cpuid edx="0x00000020" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pae">
+       
+      
+      <cpuid edx="0x00000040" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="mce">
+       
+      
+      <cpuid edx="0x00000080" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="cx8">
+       
+      
+      <cpuid edx="0x00000100" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="apic">
+       
+      
+      <cpuid edx="0x00000200" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="sep">
+       
+      
+      <cpuid edx="0x00000800" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="mtrr">
+       
+      
+      <cpuid edx="0x00001000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pge">
+       
+      
+      <cpuid edx="0x00002000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="mca">
+       
+      
+      <cpuid edx="0x00004000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="cmov">
+       
+      
+      <cpuid edx="0x00008000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pat">
+       
+      
+      <cpuid edx="0x00010000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pse36">
+       
+      
+      <cpuid edx="0x00020000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pn">
+       
+      
+      <cpuid edx="0x00040000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="clflush">
+       
+      
+      <cpuid edx="0x00080000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="ds">
+       
+      
+      <cpuid edx="0x00200000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="acpi">
+       
+      
+      <cpuid edx="0x00400000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="mmx">
+       
+      
+      <cpuid edx="0x00800000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="fxsr">
+       
+      
+      <cpuid edx="0x01000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="sse">
+       
+      
+      <cpuid edx="0x02000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="sse2">
+       
+      
+      <cpuid edx="0x04000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="ss">
+       
+      
+      <cpuid edx="0x08000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="ht">
+       
+      
+      <cpuid edx="0x10000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="tm">
+       
+      
+      <cpuid edx="0x20000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="ia64">
+       
+      
+      <cpuid edx="0x40000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pbe">
+       
+      
+      <cpuid edx="0x80000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+
+    
+    
+    <feature name="pni">
+       
+      
+      <cpuid ecx="0x00000001" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pclmuldq">
+      
+      
+      <cpuid ecx="0x00000002" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="dtes64">
+      
+      
+      <cpuid ecx="0x00000004" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="monitor">
+       
+      
+      <cpuid ecx="0x00000008" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="ds_cpl">
+       
+      
+      <cpuid ecx="0x00000010" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="vmx">
+       
+      
+      <cpuid ecx="0x00000020" function="0x00000001"/>
+      
+    
+    </feature>
+    
+     
+    <feature name="smx">
+      
+      
+      <cpuid ecx="0x00000040" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="est">
+       
+      
+      <cpuid ecx="0x00000080" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="tm2">
+       
+      
+      <cpuid ecx="0x00000100" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="ssse3">
+       
+      
+      <cpuid ecx="0x00000200" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="cid">
+       
+      
+      <cpuid ecx="0x00000400" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="fma">
+      
+      
+      <cpuid ecx="0x00001000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="cx16">
+       
+      
+      <cpuid ecx="0x00002000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="xtpr">
+       
+      
+      <cpuid ecx="0x00004000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pdcm">
+      
+      
+      <cpuid ecx="0x00008000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pcid">
+      
+      
+      <cpuid ecx="0x00020000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="dca">
+       
+      
+      <cpuid ecx="0x00040000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="sse4.1">
+       
+      
+      <cpuid ecx="0x00080000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="sse4.2">
+       
+      
+      <cpuid ecx="0x00100000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="x2apic">
+       
+      
+      <cpuid ecx="0x00200000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="movbe">
+      
+      
+      <cpuid ecx="0x00400000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="popcnt">
+       
+      
+      <cpuid ecx="0x00800000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="tsc-deadline">
+      
+      
+      <cpuid ecx="0x01000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="aes">
+      
+      
+      <cpuid ecx="0x02000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="xsave">
+      
+      
+      <cpuid ecx="0x04000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="osxsave">
+      
+      
+      <cpuid ecx="0x08000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="avx">
+      
+      
+      <cpuid ecx="0x10000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="f16c">
+      
+      
+      <cpuid ecx="0x20000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="rdrand">
+      
+      
+      <cpuid ecx="0x40000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="hypervisor">
+       
+      
+      <cpuid ecx="0x80000000" function="0x00000001"/>
+      
+    
+    </feature>
+    
+
+    
+    
+    <feature name="syscall">
+       
+      
+      <cpuid edx="0x00000800" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="nx">
+       
+      
+      <cpuid edx="0x00100000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="mmxext">
+       
+      
+      <cpuid edx="0x00400000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="fxsr_opt">
+       
+      
+      <cpuid edx="0x02000000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="pdpe1gb">
+       
+      
+      <cpuid edx="0x04000000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="rdtscp">
+       
+      
+      <cpuid edx="0x08000000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="lm">
+       
+      
+      <cpuid edx="0x20000000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="3dnowext">
+       
+      
+      <cpuid edx="0x40000000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="3dnow">
+       
+      
+      <cpuid edx="0x80000000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+
+    
+    
+    <feature name="lahf_lm">
+       
+      
+      <cpuid ecx="0x00000001" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="cmp_legacy">
+       
+      
+      <cpuid ecx="0x00000002" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="svm">
+       
+      
+      <cpuid ecx="0x00000004" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="extapic">
+       
+      
+      <cpuid ecx="0x00000008" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="cr8legacy">
+       
+      
+      <cpuid ecx="0x00000010" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="abm">
+       
+      
+      <cpuid ecx="0x00000020" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="sse4a">
+       
+      
+      <cpuid ecx="0x00000040" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="misalignsse">
+       
+      
+      <cpuid ecx="0x00000080" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="3dnowprefetch">
+       
+      
+      <cpuid ecx="0x00000100" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="osvw">
+       
+      
+      <cpuid ecx="0x00000200" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="ibs">
+      
+      
+      <cpuid ecx="0x00000400" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="xop">
+      
+      
+      <cpuid ecx="0x00000800" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="skinit">
+       
+      
+      <cpuid ecx="0x00001000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="wdt">
+      
+      
+      <cpuid ecx="0x00002000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="lwp">
+      
+      
+      <cpuid ecx="0x00008000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="fma4">
+      
+      
+      <cpuid ecx="0x00010000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="tce">
+      
+      
+      <cpuid ecx="0x00020000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="cvt16">
+      
+      
+      <cpuid ecx="0x00040000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="nodeid_msr">
+      
+      
+      <cpuid ecx="0x00080000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="tbm">
+      
+      
+      <cpuid ecx="0x00200000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="topoext">
+      
+      
+      <cpuid ecx="0x00400000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="perfctr_core">
+      
+      
+      <cpuid ecx="0x00800000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="perfctr_nb">
+      
+      
+      <cpuid ecx="0x01000000" function="0x80000001"/>
+      
+    
+    </feature>
+    
+
+    
+    
+    
+    <feature name="fsgsbase">
+      
+      
+      <cpuid ebx="0x00000001" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="bmi1">
+      
+      
+      <cpuid ebx="0x00000008" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="hle">
+      
+      
+      <cpuid ebx="0x00000010" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="avx2">
+      
+      
+      <cpuid ebx="0x00000020" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="smep">
+      
+      
+      <cpuid ebx="0x00000080" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="bmi2">
+      
+      
+      <cpuid ebx="0x00000100" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="erms">
+      
+      
+      <cpuid ebx="0x00000200" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="invpcid">
+      
+      
+      <cpuid ebx="0x00000400" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="rtm">
+      
+      
+      <cpuid ebx="0x00000800" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="rdseed">
+      
+      
+      <cpuid ebx="0x00040000" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="adx">
+      
+      
+      <cpuid ebx="0x00080000" function="0x00000007"/>
+      
+    
+    </feature>
+    
+    
+    <feature name="smap">
+      
+      
+      <cpuid ebx="0x00100000" function="0x00000007"/>
+      
+    
+    </feature>
+    
+
+    
+    
+    <model name="486">
+      
+      
+      <feature name="fpu"/>
+      
+      
+      <feature name="vme"/>
+      
+      
+      <feature name="pse"/>
+      
+    
+    </model>
+    
+
+    
+    
+    <model name="pentium">
+      
+      
+      <model name="486"/>
+      
+      
+      <feature name="de"/>
+      
+      
+      <feature name="tsc"/>
+      
+      
+      <feature name="msr"/>
+      
+      
+      <feature name="mce"/>
+      
+      
+      <feature name="cx8"/>
+      
+      
+      <feature name="mmx"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="pentium2">
+      
+      
+      <model name="pentium"/>
+      
+      
+      <feature name="pae"/>
+      
+      
+      <feature name="sep"/>
+      
+      
+      <feature name="mtrr"/>
+      
+      
+      <feature name="pge"/>
+      
+      
+      <feature name="mca"/>
+      
+      
+      <feature name="cmov"/>
+      
+      
+      <feature name="pat"/>
+      
+      
+      <feature name="pse36"/>
+      
+      
+      <feature name="fxsr"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="pentium3">
+      
+      
+      <model name="pentium2"/>
+      
+      
+      <feature name="sse"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="pentiumpro">
+      
+      
+      <feature name="fpu"/>
+      
+      
+      <feature name="de"/>
+      
+      
+      <feature name="pse"/>
+      
+      
+      <feature name="tsc"/>
+      
+      
+      <feature name="msr"/>
+      
+      
+      <feature name="pae"/>
+      
+      
+      <feature name="mce"/>
+      
+      
+      <feature name="cx8"/>
+      
+      
+      <feature name="apic"/>
+      
+      
+      <feature name="sep"/>
+      
+      
+      <feature name="pge"/>
+      
+      
+      <feature name="cmov"/>
+      
+      
+      <feature name="pat"/>
+      
+      
+      <feature name="mmx"/>
+      
+      
+      <feature name="fxsr"/>
+      
+      
+      <feature name="sse"/>
+      
+      
+      <feature name="sse2"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="coreduo">
+      
+      
+      <model name="pentiumpro"/>
+      
+      
+      <vendor name="Intel"/>
+      
+      
+      <feature name="vme"/>
+      
+      
+      <feature name="mtrr"/>
+      
+      
+      <feature name="mca"/>
+      
+      
+      <feature name="clflush"/>
+      
+      
+      <feature name="pni"/>
+      
+      
+      <feature name="monitor"/>
+      
+      
+      <feature name="nx"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="n270">
+      
+      
+      <model name="coreduo"/>
+      
+      
+      <feature name="ssse3"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="core2duo">
+      
+      
+      <model name="n270"/>
+      
+      
+      <feature name="pse36"/>
+      
+      
+      <feature name="syscall"/>
+      
+      
+      <feature name="lm"/>
+      
+    
+    </model>
+    
+
+    
+    
+    <model name="qemu32">
+      
+      
+      <model name="pentiumpro"/>
+      
+      
+      <feature name="pni"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="kvm32">
+      
+      
+      <model name="qemu32"/>
+      
+      
+      <feature name="mtrr"/>
+      
+      
+      <feature name="mca"/>
+      
+      
+      <feature name="pse36"/>
+      
+      
+      <feature name="clflush"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="cpu64-rhel5">
+      
+      
+      <model name="kvm32"/>
+      
+      
+      <feature name="syscall"/>
+      
+      
+      <feature name="nx"/>
+      
+      
+      <feature name="lm"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="cpu64-rhel6">
+      
+      
+      <model name="cpu64-rhel5"/>
+      
+      
+      <feature name="cx16"/>
+      
+      
+      <feature name="lahf_lm"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="kvm64">
+      
+      
+      <model name="cpu64-rhel5"/>
+      
+      
+      <feature name="cx16"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="qemu64">
+      
+      
+      <model name="kvm64"/>
+      
+      
+      
+      <feature name="svm"/>
+      
+    
+    </model>
+    
+
+    
+    
+    <model name="Conroe">
+      
+      
+      <model name="pentiumpro"/>
+      
+      
+      <vendor name="Intel"/>
+      
+      
+      <feature name="mtrr"/>
+      
+      
+      <feature name="mca"/>
+      
+      
+      <feature name="pse36"/>
+      
+      
+      <feature name="clflush"/>
+      
+      
+      <feature name="pni"/>
+      
+      
+      <feature name="ssse3"/>
+      
+      
+      <feature name="syscall"/>
+      
+      
+      <feature name="nx"/>
+      
+      
+      <feature name="lm"/>
+      
+      
+      <feature name="lahf_lm"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="Penryn">
+      
+      
+      <model name="Conroe"/>
+      
+      
+      <feature name="cx16"/>
+      
+      
+      <feature name="sse4.1"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="Nehalem">
+      
+      
+      <model name="Penryn"/>
+      
+      
+      <feature name="sse4.2"/>
+      
+      
+      <feature name="popcnt"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="Westmere">
+      
+      
+      <model name="Nehalem"/>
+      
+      
+      <feature name="aes"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="SandyBridge">
+      
+      
+      <model name="Westmere"/>
+      
+      
+      <feature name="pclmuldq"/>
+      
+      
+      <feature name="x2apic"/>
+      
+      
+      <feature name="tsc-deadline"/>
+      
+      
+      <feature name="xsave"/>
+      
+      
+      <feature name="avx"/>
+      
+      
+      <feature name="rdtscp"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="Haswell">
+      
+      
+      <model name="SandyBridge"/>
+      
+      
+      <feature name="fma"/>
+      
+      
+      <feature name="pcid"/>
+      
+      
+      <feature name="movbe"/>
+      
+      
+      <feature name="fsgsbase"/>
+      
+      
+      <feature name="bmi1"/>
+      
+      
+      <feature name="hle"/>
+      
+      
+      <feature name="avx2"/>
+      
+      
+      <feature name="smep"/>
+      
+      
+      <feature name="bmi2"/>
+      
+      
+      <feature name="erms"/>
+      
+      
+      <feature name="invpcid"/>
+      
+      
+      <feature name="rtm"/>
+      
+    
+    </model>
+    
+
+    
+    
+    <model name="athlon">
+      
+      
+      <model name="pentiumpro"/>
+      
+      
+      <vendor name="AMD"/>
+      
+      
+      <feature name="vme"/>
+      
+      
+      <feature name="mtrr"/>
+      
+      
+      <feature name="pse36"/>
+      
+      
+      <feature name="mmxext"/>
+      
+      
+      <feature name="3dnowext"/>
+      
+      
+      <feature name="3dnow"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="phenom">
+      
+      
+      <model name="cpu64-rhel5"/>
+      
+      
+      <vendor name="AMD"/>
+      
+      
+      <feature name="monitor"/>
+      
+      
+      <feature name="mmxext"/>
+      
+      
+      <feature name="fxsr_opt"/>
+      
+      
+      <feature name="3dnowext"/>
+      
+      
+      <feature name="3dnow"/>
+      
+      
+      <feature name="svm"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="Opteron_G1">
+      
+      
+      <model name="cpu64-rhel5"/>
+      
+      
+      <vendor name="AMD"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="Opteron_G2">
+      
+      
+      <model name="Opteron_G1"/>
+      
+      
+      <feature name="cx16"/>
+      
+      
+      <feature name="rdtscp"/>
+      
+      
+      <feature name="lahf_lm"/>
+      
+      
+      <feature name="svm"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="Opteron_G3">
+      
+      
+      <model name="Opteron_G2"/>
+      
+      
+      <feature name="monitor"/>
+      
+      
+      <feature name="popcnt"/>
+      
+      
+      <feature name="abm"/>
+      
+      
+      <feature name="sse4a"/>
+      
+      
+      <feature name="misalignsse"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="Opteron_G4">
+      
+      
+      <model name="Opteron_G2"/>
+      
+      
+      
+      <feature name="pclmuldq"/>
+      
+      
+      <feature name="ssse3"/>
+      
+      
+      <feature name="sse4.1"/>
+      
+      
+      <feature name="sse4.2"/>
+      
+      
+      <feature name="popcnt"/>
+      
+      
+      <feature name="aes"/>
+      
+      
+      <feature name="xsave"/>
+      
+      
+      <feature name="avx"/>
+      
+      
+      <feature name="pdpe1gb"/>
+      
+      
+      <feature name="abm"/>
+      
+      
+      <feature name="sse4a"/>
+      
+      
+      <feature name="misalignsse"/>
+      
+      
+      <feature name="3dnowprefetch"/>
+      
+      
+      <feature name="xop"/>
+      
+      
+      <feature name="fma4"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="Opteron_G5">
+      
+      
+      <model name="Opteron_G4"/>
+      
+      
+      <feature name="f16c"/>
+      
+      
+      <feature name="fma"/>
+      
+      
+      <feature name="tbm"/>
+      
+    
+    </model>
+    
+  
+    <model name="gate64">
+      <vendor name="Intel"/>
+      <feature name="fpu"/>
+      <feature name="de"/>
+      <feature name="pse"/>
+      <feature name="tsc"/>
+      <feature name="msr"/>
+      <feature name="pae"/>
+      <feature name="mce"/>
+      <feature name="cx8"/>
+      <feature name="apic"/>
+      <feature name="sep"/>
+      <feature name="pge"/>
+      <feature name="cmov"/>
+      <feature name="pat"/>
+      <feature name="mmx"/>
+      <feature name="fxsr"/>
+      <feature name="sse"/>
+      <feature name="sse2"/>
+      <feature name="vme"/>
+      <feature name="mtrr"/>
+      <feature name="mca"/>
+      <feature name="clflush"/>
+      <feature name="pni"/>
+      <feature name="nx"/>
+      <feature name="ssse3"/>
+      <feature name="syscall"/>
+      <feature name="lm"/>
+    </model>
+  </arch>
+  
+  
+  <arch name="ppc64">
+    
+    
+    
+    <vendor name="IBM"/>
+    
+
+    
+    
+    <model name="POWER7">
+      
+      
+      <vendor name="IBM"/>
+      
+      
+      <pvr value="0x003f0200"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="POWER7_v2.1">
+      
+      
+      <vendor name="IBM"/>
+      
+      
+      <pvr value="0x003f0201"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="POWER7_v2.3">
+      
+      
+      <vendor name="IBM"/>
+      
+      
+      <pvr value="0x003f0203"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="POWER7+_v2.1">
+      
+      
+      <vendor name="IBM"/>
+      
+      
+      <pvr value="0x004a0201"/>
+      
+    
+    </model>
+    
+
+    
+    <model name="POWER8_v1.0">
+      
+      
+      <vendor name="IBM"/>
+      
+      
+      <pvr value="0x004b0100"/>
+      
+    
+    </model>
+    
+
+  
+  </arch>
+  
+
+</cpus>
+

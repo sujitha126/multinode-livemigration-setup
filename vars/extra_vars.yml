@@ -44,7 +44,7 @@ NET:
 # this to "use" after the cache machine has been fully built.
 #
 CACHE:
-    pkg_cache:                  "create"        # "create" or "use" or "none"
+    pkg_cache:                  "none"        # "create" or "use" or "none"
     pkg_cache_existing_ip_addr: "192.168.99.99" # IP address of cache server. Ignored if "create" or "none".
     pip_cache_port:             3141
     apt_cache_port:             3142
@@ -67,7 +67,7 @@ USERS:
 #
 DEVSTACK:
     repo_version:               "master"
-    repo_url:                   "git://github.com/openstack-dev/devstack.git"
+    repo_url:                   "https://github.com/openstack-dev/devstack.git"
     tunnel_type:                "gre"  # Look for directory of that name in template directory
     result_url:                 "http://<your base OpenStack controller host>/results"
 

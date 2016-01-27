@@ -30,4 +30,5 @@
 #
 - include: playbooks/common.yml
 - include: playbooks/devstack_installation.yml
+- include: playbooks/live_migration_setup.yml
 

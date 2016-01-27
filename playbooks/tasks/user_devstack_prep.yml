@@ -24,6 +24,9 @@
 # get an interactive block when the git module tries to establish an ssh connection
 # to the server. The block is a prompt that asks us if we want to accept this
 # unknown host. So, doing the scan first avoids this issue.
+- name: Create .ssh folder
+  file: path={{ FILES.stack_user_home_dir }}/.ssh  state=directory mode=0755
+
 - name: Add the key for github.com to the known_host file
   shell: >
       ssh-keyscan -H github.com > {{ FILES.stack_user_home_dir }}/.ssh/known_hosts

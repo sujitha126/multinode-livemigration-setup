@@ -30,4 +30,7 @@ FILES:
     local_files_dir:            "files"
     local_template_dir:         "templates"
     test_result_dir:            "/var/www/results/"
+    libvirt_cpu_dir:            "/usr/share/libvirt"
+    nova_conf_file:             "/etc/nova/nova.conf"
+    ssh_config_file:            "/etc/ssh/ssh_config"
 
