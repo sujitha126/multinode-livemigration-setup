@@ -53,7 +53,7 @@ Instructions (for Vagrant deployments)
 
     1. Clone this repository:
 
-        $ git clone git@github.com:CiscoSystems/devstack-environment.git
+        $ git clone https://github.com/sujitha126/multinode-livemigration-setup.git
 
     2. Change into the directory:
 
@@ -89,22 +89,20 @@ Instructions (for hardware deployments)
 
     1. Clone this repository:
 
-        $ git clone git@github.com:CiscoSystems/devstack-environment.git
+        $ git clone https://github.com/sujitha126/multinode-livemigration-setup.git
 
     2. Change into the directory:
 
         $ cd devstack-environment
 
-    3. Copy the file 'vagrant_hosts_multi' or rename it to 'hosts'.
-
-    4. Edit the 'hosts' file to change the IP addresses of your actual
+    3. Edit the 'hosts' file to change the IP addresses of your actual
        machines. You don't have to use a cache machine, so the apt-pip-cache
        machine may be removed.
        
-    5. In the 'all-hosts' section of the hosts file add the 'ansible_ssh_user'
+    4. In the 'all-hosts' section of the hosts file add the 'ansible_ssh_user'
        option in each of the host lines, like so:
 
-            controller  ansible_ssh_host=192.168.99.11  ansible_ssh_user=ubuntu
+            controller  ansible_ssh_host=192.168.99.11  ansible_ssh_user=root
 
        Alternatively, if you have the same user on all hosts, add a single
        "ansible_ssh_user=...." line in the "group_vars/all" file.
@@ -114,13 +112,13 @@ Instructions (for hardware deployments)
        group_vars/all file) to point to your private key file in your file
        system.
 
-    6. Open the 'vars/extra_vars.yml' file. Edit the 'pub_eth_interface'
-       value as well as the 'CACHE.pkg_cache' and 'CACHE.pkg_cache_existing_ip_addr'
-       settings as needed.
+    6. Open the 'vars/extra_vars.yml' file. Change CACHE.pkg_cache to none in vars/extra_vars.yml.
 
     7. Start the Ansible playbooks like so:
 
         $ ansible-playbook -i hosts -e "@vars/extra_vars.yml" site.yml
+
+    8. Restart nova services on each node and try live migration.
 
 
 What does it do?
