@@ -102,14 +102,12 @@
 # Generate ssh-keypair for stack user
 
 - hosts: cluster
-  sudo: yes
-  sudo_user: "{{ USERS.stack_user }}"
   tasks:
   - user: name={{ USERS.stack_user }}
           generate_ssh_key=yes
           ssh_key_file=.ssh/id_rsa
   - name: Copy public key to variable
-    command: cat .ssh/id_rsa.pub
+    command: cat {{ FILES.stack_user_home_dir }}/.ssh/id_rsa.pub
     register: tmp_file
   - set_fact:
       public_key_stack='{{tmp_file.stdout}}'

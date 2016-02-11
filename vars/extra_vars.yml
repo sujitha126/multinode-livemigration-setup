@@ -53,7 +53,7 @@ CACHE:
 # The user that should install/run devstack.
 #
 USERS:
-    stack_user:                 "vagrant"       # User will be created if necessary
+    stack_user:                 "stack"       # User will be created if necessary
 
 #
 # Details about the specific DevStack version and configuration you wish to run

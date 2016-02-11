@@ -9,8 +9,8 @@ ADMIN_PASSWORD=nova
 MULTI_HOST=1
 GIT_BASE=https://github.com
 
-LOGFILE=/home/vagrant/workspace/logs/stack.sh.log
-SCREEN_LOGDIR=/home/vagrant/workspace/logs
+LOGFILE={{ FILES.log_dir }}/stack.sh.log
+SCREEN_LOGDIR={{ FILES.log_dir }}
 
 IMAGE_URLS="http://download.cirros-cloud.net/0.3.2/cirros-0.3.2-x86_64-uec.tar.gz"
 
