@@ -9,6 +9,66 @@ deployment with just a single command.
 You can deploy either a virtual environment via Vagrant, or use the
 Ansible playbooks on their own to deploy on real hardware.
 
+Prerequisites (for hardware deployments)
+========================================
+You need to have installedi on Ansible-server:
+
+    - Ansible
+
+On Ubuntu based systems, you should be able to do this:
+
+    $ apt-get ansible
+
+If you want to make sure you have the latest version of Ansible (highly
+recommended), and you are still running an older version of Ubuntu (such
+as 12.04, for example), you could instead do:
+
+    $ apt-get install python-pip
+    $ pip install ansible
+
+
+On controller and compute node, install python-apt package.
+
+    $ apt-get install python-apt
+
+Provide password less ssh access to controller and compute nodes from ansible-server
+
+On Ansible server:
+
+    $ ssh-keygen
+    $ ssh-copy-id ansible-controller-ip
+    $ ssh-copy-id ansible-compute-ip
+
+
+Instructions (for hardware deployments)
+=======================================
+
+    0. Have some hardware machines available with fresh installs of Ubuntu 14.04.
+       Please make sure that you have a user account on each of those machines,
+       which allows password-less sudo. If you have an SSH key for password-less
+       login to those accounts, that's great as well, but is not mandatory.
+
+    1. Clone this repository:
+
+        $ git clone https://github.com/sujitha126/multinode-livemigration-setup.git
+
+    2. Change into the directory:
+
+        $ cd multinode-livemigration-setup
+
+    3. Edit the 'hosts' file to change the IP addresses of your actual
+       machines. You don't have to use a cache machine, so the apt-pip-cache
+       machine may be removed.
+
+    4. Open the 'vars/extra_vars.yml' file. Change CACHE.pkg_cache to none in vars/extra_vars.yml.
+
+    5. Start the Ansible playbooks like so:
+
+        $ ansible-playbook -i hosts -e "@vars/extra_vars.yml" site.yml
+
+    6. Restart nova services on each node and try live migration.
+
+
 
 Prerequisites (for Vagrant deployments)
 =======================================
@@ -27,24 +87,6 @@ recommended), and you are still running an older version of Ubuntu (such
 as 12.04, for example), you could instead do:
 
     $ apt-get install virtualbox vagrant python-pip
-    $ pip install ansible
-
-
-Prerequisites (for hardware deployments)
-========================================
-You need to have installed:
-
-    - Ansible
-
-On Ubuntu based systems, you should be able to do this:
-
-    $ apt-get ansible
-
-If you want to make sure you have the latest version of Ansible (highly
-recommended), and you are still running an older version of Ubuntu (such
-as 12.04, for example), you could instead do:
-
-    $ apt-get install python-pip
     $ pip install ansible
 
 
@@ -77,48 +119,6 @@ have a 'workspace' directory, inside of which you will find 'log' and
 'devstack'. On the controller, after changing into the devstack directory,
 you can run 'source openrc admin demo', after which you can issue various
 OpenStack commands.
-
-
-Instructions (for hardware deployments)
-=======================================
-
-    0. Have some hardware machines available with fresh installs of Ubuntu 14.04.
-       Please make sure that you have a user account on each of those machines,
-       which allows password-less sudo. If you have an SSH key for password-less
-       login to those accounts, that's great as well, but is not mandatory.
-
-    1. Clone this repository:
-
-        $ git clone https://github.com/sujitha126/multinode-livemigration-setup.git
-
-    2. Change into the directory:
-
-        $ cd devstack-environment
-
-    3. Edit the 'hosts' file to change the IP addresses of your actual
-       machines. You don't have to use a cache machine, so the apt-pip-cache
-       machine may be removed.
-       
-    4. In the 'all-hosts' section of the hosts file add the 'ansible_ssh_user'
-       option in each of the host lines, like so:
-
-            controller  ansible_ssh_host=192.168.99.11  ansible_ssh_user=root
-
-       Alternatively, if you have the same user on all hosts, add a single
-       "ansible_ssh_user=...." line in the "group_vars/all" file.
-
-       If you use SSH keys for login, use the "ansible_ssh_private_key_file"
-       option (either on a per-host basis in the hosts file, or in the
-       group_vars/all file) to point to your private key file in your file
-       system.
-
-    6. Open the 'vars/extra_vars.yml' file. Change CACHE.pkg_cache to none in vars/extra_vars.yml.
-
-    7. Start the Ansible playbooks like so:
-
-        $ ansible-playbook -i hosts -e "@vars/extra_vars.yml" site.yml
-
-    8. Restart nova services on each node and try live migration.
 
 
 What does it do?
